@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>No isn't answer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <h2>Do you want to go on a date with me?</h2>
+        <img src="https://www.syfy.com/sites/syfy/files/2023/01/screen_shot_2023-01-10_at_9.47.48_am.jpg" alt="">
+        <p>
+            <button><a href="./yes.html">Yes</a></button>
+            <button id="btn-no">No</button>
+        </p>
+    </main>
+    <script>
+        const button = document.getElementById('btn-no');
+        button.addEventListener('mouseover', function () {
+            const newX = Math.random() * window.innerWidth;
+            const newY = Math.random() * window.innerHeight;
+
+            button.style.top = `${newY}px`;
+            button.style.left = `${newX}px`;
+        });
+    </script>
+</body>
+
+</html>
